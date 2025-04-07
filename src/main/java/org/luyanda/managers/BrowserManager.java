@@ -1,5 +1,6 @@
 package org.luyanda.managers;
 
+import org.luyanda.utilities.LoggerUtil;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,14 +13,11 @@ import java.time.Duration;
 
 public class BrowserManager {
 
-    private static final String DEFAULT_BROWSER = "chrome";
 
     public static WebDriver createDriver(String browserType, boolean isHeadless) {
 
         WebDriver driver;
-
-        System.out.println("Creating WebDriver for browser: " + browserType);
-
+        LoggerUtil.info("Creating WebDriver for browser: " + browserType);
 
         if (browserType.equalsIgnoreCase("chrome")) {
             ChromeOptions chromeOptions = new ChromeOptions();
@@ -29,7 +27,9 @@ public class BrowserManager {
             } else {
                 chromeOptions.addArguments("--start-maximized");
             }
+
             driver = new ChromeDriver(chromeOptions);
+
         } else if (browserType.equalsIgnoreCase("edge")) {
             EdgeOptions edgeOptions = new EdgeOptions();
             if (isHeadless) {
@@ -38,6 +38,7 @@ public class BrowserManager {
             } else {
                 edgeOptions.addArguments("--start-maximized");
             }
+
             edgeOptions.addArguments("--start-maximized");
             driver = new EdgeDriver(edgeOptions);
 
