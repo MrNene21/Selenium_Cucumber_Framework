@@ -47,7 +47,7 @@ public class PageInteractions {
                 LoggerUtil.info("The text " + "'" + inputText + "' "+ "was sent to " + nameOfElement + " field");
             }
             else{
-                LoggerUtil.error(inputText + " could not be  sent to " + nameOfElement + " because it cannot be found!");
+                LoggerUtil.error(inputText + " text could not be  sent to " + nameOfElement + " field because it cannot be found!");
             }
     }
 

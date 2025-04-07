@@ -15,7 +15,7 @@ public class TestContext {
 
     public TestContext(){
         // Fetch the browser type from the properties file
-        this.browserType = PropertyReaderUtil.getProperty("browser"); // Fetch from properties file
+        this.browserType = PropertyReaderUtil.getProperty("browser");
 
         // Fetch headless mode property from system or properties file
         String headlessProperty = System.getProperty("headless");

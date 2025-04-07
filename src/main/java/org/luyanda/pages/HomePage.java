@@ -18,11 +18,6 @@ public class HomePage extends PageInteractions {
     private WebElement productsTitle;
 
 
-
-
-
-
-
     //Actions
     public Boolean isProductsTitleVisible(){
         return waitForElement(productsTitle);
