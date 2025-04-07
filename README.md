@@ -8,8 +8,7 @@ This is a modular, scalable test automation framework built with **Selenium**, *
 
 - ✅ BDD with Cucumber and Gherkin
 - ✅ Selenium WebDriver for browser automation
-- ✅ TestNG for test management and parallel execution
+- ✅ TestNG for parallel execution
 - ✅ Page Object Model for maintainable code
-- ✅ Test data and web elements stored in CSV format
 - ✅ Support for headless execution
 - ✅ Chaintest Reports
